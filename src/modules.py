@@ -32,7 +32,7 @@ login_name = os.getlogin()
 
 if __name__ == "__main__":
     for i, arg in enumerate(arguements):
-        print(f'Arguments{i}: {arg}')
+        print(f'Argument {i}: {arg}')
 
     print('---------------------')
     print(f'Operating System: {platform}')
