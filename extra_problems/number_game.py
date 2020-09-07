@@ -4,7 +4,8 @@
 # Tell it if the number is > or < than its guess
 # Uses that info to modify its guess until it homes in
 
-# This program has a pretty sharp learning rate
+# This program has a pretty sharp learning rate as it uses
+# user input in a range for random.randint()
 import random
 import time
 
