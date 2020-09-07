@@ -16,7 +16,10 @@ time.sleep(1)
 print('Computer is selecting a number...')
 time.sleep(1)
 
-computer_number = random.randint(1, 100)
+high = 100
+low = 1
+
+computer_number = low + (high - low) // 2
 
 while True:
     if user_number == computer_number:
@@ -29,6 +32,7 @@ while True:
         time.sleep(0.5)
         response = input(f'Is your number > or < than {computer_number}? ')
         if response == '<':
-            computer_number = random.randint(user_number, computer_number - 1)
+            high = computer_number - 1
         elif response == '>':
-            computer_number = random.randint(computer_number + 1, user_number)
+            low = computer_number + 1
+        computer_number = low + (high - low) // 2
