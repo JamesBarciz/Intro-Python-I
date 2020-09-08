@@ -1,16 +1,7 @@
-# grid = [
-#     ['.' for _ in range(15)],
-#     ['.' for _ in range(5)] + ['*'] + ['.' for _ in range(5)] + ['*', '.', '.', '.'],
-#     ['.' for _ in range(15)],
-#     ['.', '*'] + ['.' for _ in range(6)] + ['*'] + ['.' for _ in range(6)],
-#     ['.' for _ in range(15)],
-#     ['.' for _ in range(6)] + ['*'] + ['.' for _ in range(8)],
-#     ['.' for _ in range(8)] + ['*'] + ['.' for _ in range(6)]
-# ]
-
 from termcolor import colored
 import random
 import os
+
 
 grid = []
 max_row, max_col = input('Enter the dimensions of your space grid (e.g. 25x15): ').split('x')
