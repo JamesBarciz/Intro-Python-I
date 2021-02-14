@@ -2,9 +2,10 @@
 List comprehensions are one cool and unique feature of Python.
 They essentially act as a terse and concise way of initializing
 and populating a list given some expression that specifies how
-the list should be populated. 
+the list should be populated.
 
-Take a look at https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
+Take a look at:
+https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
 for more info regarding list comprehensions.
 """
 
@@ -27,14 +28,10 @@ y3 = [s.upper() for s in a]
 # Use a list comprehension to create a list containing only the _even_ elements
 # the user entered into list x.
 
-# x = input("Enter comma-separated numbers: ").split(',')
-
 # What do you need between the square brackets to make it work?
-# y4 = [int(n) for n in x if int(n) % 2 == 0]
 
 
 if __name__ == "__main__":
-    # Locals
     x = input("Enter comma-separated numbers: ").split(',')
     y4 = [int(n) for n in x if int(n) % 2 == 0]
 
